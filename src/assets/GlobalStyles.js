@@ -1,6 +1,6 @@
 import { createGlobalStyle } from 'styled-components';
-import Neucha from '../fonts/Neucha-Regular.ttf';
-import Lobster from '../fonts/Lobster-Regular.ttf';
+import Neucha from '../fonts/Neucha-Regular.woff2';
+import Lobster from '../fonts/Lobster-Regular.woff2';
 
 const GlobalStyles = createGlobalStyle`
     @font-face {
