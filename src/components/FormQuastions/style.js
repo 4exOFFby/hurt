@@ -19,7 +19,7 @@ const FormSection = Styled.section`
   bottom: 0;
   right: 0;
   background-color: black;
-  height: 100vh;
+  height: auto;
   color: ${(props) => props.theme.colorDark};
   padding: 30px 0;
 
@@ -29,7 +29,7 @@ const FormSection = Styled.section`
     left: initial;
     bottom: initial;
     right: initial;
-    height: 100vh;
+    height: auto;
   }
 
   @media (max-width: 767px) {

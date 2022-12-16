@@ -40,13 +40,14 @@ const StyledMainScreen = Styled.section`
     height: 100vh;
     overflow-y: none;
 
+
     @media (max-width: 1199px) {
         position: static;
         top: initial;
         left: initial;
         bottom: initial;
         right: initial;
-        height: auto;
+        height: 100vh;
     }
 
     @media (max-width: 767px) {
@@ -56,7 +57,6 @@ const StyledMainScreen = Styled.section`
         bottom: 0;
         right: 0;
         height: 100vh;
-        overflow-y: none;
     }
 `;
 
