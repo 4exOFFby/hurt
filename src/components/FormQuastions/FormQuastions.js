@@ -70,9 +70,9 @@ function FormQuastions ({setVisible}) {
       <FormContainer>
         <FormScreenImage src={Clock} alt="Песочные часы" width="400" height="400" />
         <StyledFormQuastions method="post" action="https://echo.htmlacademy.ru" onChange={e => gedValueHandler(e)}>
-          <Quastion text="Как Вас зовут?" id="user-name" name="user-name" type="text" />
           <Quastion text="Сколько Вам лет?" id="user-age"  name="user-age" type="number" />
-          <Quastion text="Что для Вас самое страшное?" id="user-scare"  name="user-scare" type="text" />
+          <Quastion text="Как Вас зовут?" id="user-name" name="user-name" type="text" />
+          <Quastion text="Ваша фамилия?" id="user-scare"  name="user-scare" type="text" />
           <Quastion text="Сколько Вы зарабатываете?" id="user-cash"  name="user-cash" type="number" />
           <Quastion text="Ваш email" name="user-email" id="user-email"  type="email" />
           <Quastion text="Напишите &laquo;Я сагласен&raquo;" id="user-acceptation" name="user-acceptation" type="text"/>
