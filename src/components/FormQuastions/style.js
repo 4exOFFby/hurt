@@ -13,28 +13,12 @@ const rotate = keyframes`
 `;
 
 const FormSection = Styled.section`
-  position: fixed;
-  top: 0;
-  left: 0;
-  bottom: 0;
-  right: 0;
   background-color: black;
-  height: auto;
   color: ${(props) => props.theme.colorDark};
   padding: 30px 0;
 
-  @media (max-width: 1199px) {
-    position: static;
-    top: initial;
-    left: initial;
-    bottom: initial;
-    right: initial;
-    height: auto;
-  }
-
   @media (max-width: 767px) {
     padding: 25px 0;
-    height: auto;
   }
 `;
 
