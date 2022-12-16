@@ -40,7 +40,7 @@ const StyledMainScreen = Styled.section`
     height: 100vh;
     overflow-y: none;
 
-    /* @media (max-width: 1199px) {
+    @media (max-width: 1199px) {
         position: static;
         top: initial;
         left: initial;
@@ -57,7 +57,7 @@ const StyledMainScreen = Styled.section`
         right: 0;
         height: 100vh;
         overflow-y: none;
-    } */
+    }
 `;
 
 

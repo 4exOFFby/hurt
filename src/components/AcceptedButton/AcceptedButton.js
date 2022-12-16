@@ -4,9 +4,9 @@ import { Button } from "./style";
 
  function AcceptedButton ({text,type, className, onClick}) {
   const allButtonHandler = () => {
-    onClick && onClick();
-    console.log('i`m button');
-    }
+    onClick && onClick(window.event);
+    window.event.preventDefault();
+  }
   return (
     <Button className={className} type={type} onClick={allButtonHandler}>{text}</Button>
   )

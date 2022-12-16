@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import { Notation } from './Notation/Notation'
 import { MainScreen } from './MainScreen/MainScreen';
 import { FormQuastions } from './FormQuastions/FormQuastions';
+import { ResultScreen } from './ResultScreen/ResultScreen';
 
 
 export function App () {
@@ -21,7 +22,7 @@ export function App () {
 
   if (visible === 3) {
     return (
-      <FormQuastions setVisible={setVisible} />
+      <ResultScreen setVisible={setVisible} />
     )
   }
 
