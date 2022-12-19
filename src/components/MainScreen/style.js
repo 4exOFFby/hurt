@@ -29,8 +29,8 @@ const Description = Styled.p`
 `;
 
 const StyledMainScreen = Styled.section`
-    background-color: black;
-    color:  ${(props) => props.theme.colorDark};
+    background-color: inherit;
+    color: inherit;
     padding: 0 0 30px 0;
 `;
 
@@ -51,7 +51,7 @@ const MainScreenButton = Styled(AcceptedButton)`
     padding: 12px 20px;
 
     @media (max-width: 1199px) {
-        align-self: flex-start;
+        align-self: center;
     }
 
     @media (max-width: 767px) {

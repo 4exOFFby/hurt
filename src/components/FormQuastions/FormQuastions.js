@@ -77,7 +77,7 @@ function FormQuastions ({setVisible}) {
           <Quastion text="Ваш email" name="user-email" id="user-email"  type="email" />
           <Quastion text="Напишите &laquo;Я сагласен&raquo;" id="user-acceptation" name="user-acceptation" type="text"/>
           <FormAcceptedButton text="Получить оскорбления" type="submit" onClick={() => checkLengthInput()}/>
-          <FormResetButton text="Я передумал..." type="reset" onClick={() => setVisible(4)}/>
+          <FormResetButton text="Я передумал..." type="reset" onClick={() => setVisible(4)} />
         </StyledFormQuastions>
       </FormContainer>
     </FormSection>

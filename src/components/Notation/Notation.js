@@ -3,12 +3,12 @@ import { NotationSection, NotationContainer, NotationTitle, NotationButton} from
 
 
 
-export function Notation ({setVisible}) {
+export function Notation ({setVisible, themeToggler}) {
   return (
     <NotationSection>
       <NotationContainer>
         <NotationTitle>Трусишка!</NotationTitle>
-        <NotationButton text="На главную" type="button" onClick={() => setVisible(1)} ></NotationButton>
+        <NotationButton text="На главную" type="button" onClick={() => {setVisible(1); themeToggler()}}></NotationButton>
       </NotationContainer>
     </NotationSection>
   )

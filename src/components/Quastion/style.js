@@ -5,7 +5,7 @@ const StyledLabel = Styled.label`
     font-size: 20px;
     display: inline-block;
     vertical-align: middle;
-    color: white;
+    color: inherit;
     margin-right: 20px;
     margin-bottom: 5px;
 `;
@@ -13,9 +13,10 @@ const StyledLabel = Styled.label`
 const StyledInput = Styled.input`
     font-family: "Lobster", "Arial", sans-serif;
     font-size: 20px;
-    color: white;
+    color: inherit;
     border: none;
-    border-bottom: 2px solid white;
+    border-bottom: 2px solid;
+    border-color: ${({theme}) => theme.borderInput};
     background-color: transparent;
     width: 70%;
 

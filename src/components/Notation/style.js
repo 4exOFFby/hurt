@@ -4,8 +4,8 @@ import { AcceptedButton } from "../AcceptedButton/AcceptedButton";
 
 const NotationSection = Styled.section`
   font-family: ${(props) => props.theme.basicFont};
-  background-color: ${(props) => props.theme.backgroundColorDark};
-  color: ${(props) => props.theme.colorDark};
+  background-color: inherit;
+  color: inherit;
   height: 100vh;
 `;
 

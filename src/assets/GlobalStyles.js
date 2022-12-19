@@ -1,6 +1,9 @@
 import { createGlobalStyle } from 'styled-components';
 import Neucha from '../fonts/Neucha-Regular.woff2';
 import Lobster from '../fonts/Lobster-Regular.woff2';
+import { DarkTheme, LightTheme } from './Themes';
+
+
 
 const GlobalStyles = createGlobalStyle`
     @font-face {
@@ -18,20 +21,11 @@ const GlobalStyles = createGlobalStyle`
     }
 
     body {
-      margin: 0;
-      background-color: black;
+        margin: 0;
+        background: ${({ theme }) => theme.body};
+        color: ${({ theme }) => theme.text};
+        transition: all 0.50s linear;
     }
 `;
 
-const theme = {
-    buttonColorAccept: 'gold',
-    buttonColorReset: 'gray',
-    backgroundColorDark: 'black',
-    backgroundColorLight: 'white',
-    basicFont: '"Neucha", "Arial", sans-serif',
-    titleFont: '"Lobster", "Arial", sans-serif',
-    colorDark: 'white',
-    colorLight: 'black',
-}
-
-export {theme, GlobalStyles};
+export {GlobalStyles, DarkTheme, LightTheme};

@@ -4,7 +4,7 @@ import { AcceptedButton } from "../AcceptedButton/AcceptedButton";
 
 
 const ResultSection = Styled.section`
-  background-color: ${(props) => props.theme.backgroundColorDark};
+  background-color: inherit;
   padding: 30px 0;
   position: fixed;
   top: 0;
@@ -12,7 +12,7 @@ const ResultSection = Styled.section`
   right: 0;
   bottom: 0;
   overflow-y: none;
-  color: ${(props) => props.theme.colorDark};
+  color: inherit;
 `;
 
 const ResultContainer = Styled(Container)`

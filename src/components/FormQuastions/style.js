@@ -13,8 +13,8 @@ const rotate = keyframes`
 `;
 
 const FormSection = Styled.section`
-  background-color: black;
-  color: ${(props) => props.theme.colorDark};
+  background-color: inherit;
+  color: inherit;
   padding: 30px 0;
 
   @media (max-width: 767px) {

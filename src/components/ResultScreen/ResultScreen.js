@@ -12,7 +12,7 @@ const getRandomInt = (min, max) => {
   return Math.floor(Math.random() * (max - min + 1)) + min;
 }
 
-export function ResultScreen ({setVisible}) {
+export function ResultScreen ({setVisible, themeToggler}) {
   const clearText = () => {
     user.name = '';
     user.age = '';
@@ -34,7 +34,7 @@ export function ResultScreen ({setVisible}) {
          {user.acceptation}!? А я что просил написать!? С такой внимательностью тебе лучше {DATA[5][getRandomInt(0,9)]}
         </Description>
         <ResultMoreButton text="Ещё..." onClick={() => {setVisible(2); clearText();}} />
-        <ResultBackButton text="На главную" onClick={() => {setVisible(1); clearText();}} />
+        <ResultBackButton text="На главную" onClick={() => {setVisible(1); clearText(); themeToggler()}} />
       </ResultContainer>
     </ResultSection>
   )
