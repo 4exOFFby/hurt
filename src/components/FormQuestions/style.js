@@ -90,7 +90,7 @@ const FormResetButton = Styled(AcceptedButton)`
   padding: 6px 20px;
 
   @media (max-width: 1199px) {
-    width: 80%;
+    width: 100%;
   }
 `;
 
