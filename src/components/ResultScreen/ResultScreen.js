@@ -2,7 +2,7 @@ import React from "react";
 import { ResultSection, ResultContainer} from './style';
 import { Description } from '../MainScreen/style';
 import { ResultMoreButton, ResultBackButton} from './style';
-import { user } from '../FormQuastions/FormQuastions';
+import { user } from '../FormQuestions/FormQuestions';
 import { DATA } from "../../assets/mock";
 
 

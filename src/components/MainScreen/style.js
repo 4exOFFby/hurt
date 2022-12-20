@@ -3,7 +3,7 @@ import { Container } from '../Container/style';
 import { AcceptedButton } from '../AcceptedButton/AcceptedButton';
 
 const Title = Styled.h1`
-    font-family: ${(props) => props.theme.titleFont};
+    font-family: "Lobster", "Arial", sans-serif;
     font-size: 66px;
     margin: 0;
     margin-bottom: 30px;
@@ -14,7 +14,7 @@ const Title = Styled.h1`
 `;
 
 const Description = Styled.p`
-    font-family: ${(props) => props.theme.basicFont};
+    font-family: "Neucha", "Arial", sans-serif;
     font-size: 24px;
     margin: 0;
     margin-bottom: 50px;

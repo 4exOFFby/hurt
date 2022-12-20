@@ -1,7 +1,7 @@
 import React from "react";
 import { InputWrapper, StyledLabel, StyledInput } from './style';
 
-function Quastion ({text, name, type, id}) {
+function Question ({text, name, type, id}) {
     return (
         <InputWrapper>
             <StyledLabel htmlFor={name}>{text}</StyledLabel>
@@ -10,4 +10,4 @@ function Quastion ({text, name, type, id}) {
     )
 }
 
-export {Quastion};
+export {Question};

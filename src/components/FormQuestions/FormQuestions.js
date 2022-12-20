@@ -1,7 +1,7 @@
 import React, {useState} from "react";
-import { Quastion } from "../Quastion/Quastion";
+import { Question } from "../Question/Question";
 import Clock from '../../img/png/clock.png';
-import { FormSection, FormContainer, FormScreenImage, StyledFormQuastions, FormAcceptedButton, FormResetButton } from './style';
+import { FormSection, FormContainer, FormScreenImage, StyledFormQuestions, FormAcceptedButton, FormResetButton } from './style';
 
 const user = {
   name: '',
@@ -12,7 +12,7 @@ const user = {
   acceptation: '',
 }
 
-function FormQuastions ({setVisible}) {
+function FormQuestions ({setVisible}) {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [scare, setScare] = useState('');
@@ -69,20 +69,20 @@ function FormQuastions ({setVisible}) {
     <FormSection>
       <FormContainer>
         <FormScreenImage src={Clock} alt="Песочные часы" width="400" height="400" />
-        <StyledFormQuastions method="post" action="https://echo.htmlacademy.ru" onChange={e => gedValueHandler(e)}>
-          <Quastion text="Сколько Вам лет?" id="user-age"  name="user-age" type="number" />
-          <Quastion text="Как Вас зовут?" id="user-name" name="user-name" type="text" />
-          <Quastion text="Ваша фамилия?" id="user-scare"  name="user-scare" type="text" />
-          <Quastion text="Сколько Вы зарабатываете?" id="user-cash"  name="user-cash" type="number" />
-          <Quastion text="Ваш email" name="user-email" id="user-email"  type="email" />
-          <Quastion text="Напишите &laquo;Я сагласен&raquo;" id="user-acceptation" name="user-acceptation" type="text"/>
+        <StyledFormQuestions method="post" action="https://echo.htmlacademy.ru" onChange={e => gedValueHandler(e)}>
+          <Question text="Сколько Вам лет?" id="user-age"  name="user-age" type="number" />
+          <Question text="Как Вас зовут?" id="user-name" name="user-name" type="text" />
+          <Question text="Ваша фамилия?" id="user-scare"  name="user-scare" type="text" />
+          <Question text="Сколько Вы зарабатываете?" id="user-cash"  name="user-cash" type="number" />
+          <Question text="Ваш email" name="user-email" id="user-email"  type="email" />
+          <Question text="Напишите &laquo;Я сагласен&raquo;" id="user-acceptation" name="user-acceptation" type="text"/>
           <FormAcceptedButton text="Получить оскорбления" type="submit" onClick={() => checkLengthInput()}/>
           <FormResetButton text="Я передумал..." type="reset" onClick={() => setVisible(4)} />
-        </StyledFormQuastions>
+        </StyledFormQuestions>
       </FormContainer>
     </FormSection>
   )
 };
 
 
-export {FormQuastions, user};
+export {FormQuestions, user};

@@ -22,7 +22,7 @@ const FormSection = Styled.section`
   }
 `;
 
-const StyledFormQuastions = Styled.form`
+const StyledFormQuestions = Styled.form`
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -96,7 +96,7 @@ const FormResetButton = Styled(AcceptedButton)`
 
 export {
   FormSection,
-  StyledFormQuastions,
+  StyledFormQuestions,
   FormScreenImage,
   FormContainer,
   FormAcceptedButton,

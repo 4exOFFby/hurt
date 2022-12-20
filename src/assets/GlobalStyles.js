@@ -11,6 +11,7 @@ const GlobalStyles = createGlobalStyle`
         src: local('Neucha'), url(${Neucha}) format('woff2');
         font-weight: 400;
         font-style: normal;
+        font-display: swap;
     }
 
     @font-face {
@@ -18,6 +19,7 @@ const GlobalStyles = createGlobalStyle`
         src: local('Lobster'), url(${Lobster}) format('woff2');
         font-weight: 400;
         font-style: normal;
+        font-display: swap;
     }
 
     body {
