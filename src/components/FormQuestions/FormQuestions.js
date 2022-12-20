@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import { Question } from "../Question/Question";
 import Clock from '../../img/png/clock.png';
 import { FormSection, FormContainer, FormScreenImage, StyledFormQuestions, FormAcceptedButton, FormResetButton } from './style';
@@ -12,7 +12,7 @@ const user = {
   acceptation: '',
 }
 
-function FormQuestions ({setVisible}) {
+function FormQuestions ({setVisible, theme}) {
   const [name, setName] = useState('');
   const [age, setAge] = useState('');
   const [scare, setScare] = useState('');
@@ -27,7 +27,7 @@ function FormQuestions ({setVisible}) {
   user.email = email;
   user.acceptation = acceptation;
 
-  const gedValueHandler = (e) => {
+  const getValueHandler = (e) => {
     switch(e.target.name) {
       case 'user-name':
       user.name = setName(e.target.value);
@@ -52,15 +52,17 @@ function FormQuestions ({setVisible}) {
     }
   }
 
-  const checkLengthInput = () => {
+
+  const checkLengthInput = (e) => {
     if (
       user.name.length > 0 &&
       user.age.length > 0 &&
       user.scare.length > 0 &&
       user.cash.length > 0 &&
-      user.email.length > 0 &&
+      user.email.includes('@') &&
       user.acceptation.length > 0
     ) {
+      e.preventDefault();
       setVisible(3);
     }
   };
@@ -69,15 +71,15 @@ function FormQuestions ({setVisible}) {
     <FormSection>
       <FormContainer>
         <FormScreenImage src={Clock} alt="Песочные часы" width="400" height="400" />
-        <StyledFormQuestions method="post" action="https://echo.htmlacademy.ru" onChange={e => gedValueHandler(e)}>
+        <StyledFormQuestions method="post" action="https://echo.htmlacademy.ru" onChange={e => getValueHandler(e)} onSubmit={e => checkLengthInput(e)}>
           <Question text="Сколько Вам лет?" id="user-age"  name="user-age" type="number" />
           <Question text="Как Вас зовут?" id="user-name" name="user-name" type="text" />
           <Question text="Ваша фамилия?" id="user-scare"  name="user-scare" type="text" />
           <Question text="Сколько Вы зарабатываете?" id="user-cash"  name="user-cash" type="number" />
           <Question text="Ваш email" name="user-email" id="user-email"  type="email" />
           <Question text="Напишите &laquo;Я сагласен&raquo;" id="user-acceptation" name="user-acceptation" type="text"/>
-          <FormAcceptedButton text="Получить оскорбления" type="submit" onClick={() => checkLengthInput()}/>
-          <FormResetButton text="Я передумал..." type="reset" onClick={() => setVisible(4)} />
+          <FormAcceptedButton text={theme === 'dark' ? 'Получить оскорбления' : 'Получить поддержку'} type="submit" onClick={e => checkLengthInput(e)}/>
+          <FormResetButton text="Я передумал..." type="reset" onClick={() => setVisible(4)}/>
         </StyledFormQuestions>
       </FormContainer>
     </FormSection>

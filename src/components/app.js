@@ -29,7 +29,7 @@ export function App () {
       return (
         <ThemeProvider theme={theme === 'dark' ? LightTheme : DarkTheme}>
           <GlobalStyles />
-          <FormQuestions setVisible={setVisible} />
+          <FormQuestions setVisible={setVisible} theme={theme} />
         </ ThemeProvider>
       )
     }
@@ -38,7 +38,7 @@ export function App () {
       return (
         <ThemeProvider theme={theme === 'dark' ? LightTheme : DarkTheme}>
           <GlobalStyles />
-          <ResultScreen setVisible={setVisible} themeToggler={themeDefault} />
+          <ResultScreen setVisible={setVisible} theme={theme} themeToggler={themeDefault} />
         </ ThemeProvider>
       )
     }
@@ -47,7 +47,7 @@ export function App () {
       return (
         <ThemeProvider theme={theme === 'dark' ? LightTheme : DarkTheme}>
           <GlobalStyles />
-          <Notation setVisible={setVisible} themeToggler={themeDefault} />
+          <Notation setVisible={setVisible} themeToggler={themeDefault} theme={theme} />
         </ ThemeProvider>
       )
     }

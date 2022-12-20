@@ -3,7 +3,7 @@ import { Container } from "../Container/style";
 import { AcceptedButton } from "../AcceptedButton/AcceptedButton";
 
 const NotationSection = Styled.section`
-  font-family: ${(props) => props.theme.basicFont};
+  font-family: "Neucha", "Arial", sans-serif;
   background-color: inherit;
   color: inherit;
   height: 100vh;

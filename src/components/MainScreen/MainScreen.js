@@ -2,7 +2,7 @@ import React from 'react';
 import MainImage from '../../img/png/main-image.png';
 import { MainScreenImage } from '../AnimatedImage/style';
 import { ThemeToggler } from '../ThemeToggler/ThemeToggler';
-import { StyledMainScreen, MainScreenContainer, Title, Description, MainScreenButton} from './style';
+import { StyledMainScreen, MainScreenContainer, Title, Description, MainScreenButton } from './style';
 
 
 
