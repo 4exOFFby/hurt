@@ -14,10 +14,10 @@ const StyledInput = Styled.input`
     font-family: "Lobster", "Arial", sans-serif;
     font-size: 20px;
     color: inherit;
-    border: none;
-    border-bottom: 2px solid;
-    border-color: ${({theme}) => theme.borderInput};
     background-color: transparent;
+    border-color: transparent;
+    border-bottom: 2px solid;
+    border-bottom-color: ${({theme}) => theme.borderInput};
     width: 70%;
 
     &:focus {
