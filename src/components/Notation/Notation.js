@@ -7,7 +7,7 @@ export function Notation ({setVisible, themeToggler, theme}) {
   return (
     <NotationSection>
       <NotationContainer>
-        <NotationTitle> {theme === 'dark' ? 'Трусишка!' : 'Ты супер!'}</NotationTitle>
+        <NotationTitle> {theme === 'dark' ? 'Трусишка!' : 'Ты чудо!'}</NotationTitle>
         <NotationButton text="На главную" type="button" onClick={() => {setVisible(1); themeToggler()}}></NotationButton>
       </NotationContainer>
     </NotationSection>
